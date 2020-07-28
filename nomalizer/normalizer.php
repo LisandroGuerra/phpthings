@@ -1,4 +1,5 @@
 <?php
+// returns the string without acentuation and in upcase
 header('Content-Type: text/html; charset=utf-8');
 function normaliza($string){
 			$acentos  =  'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýýþÿŔŕ';
