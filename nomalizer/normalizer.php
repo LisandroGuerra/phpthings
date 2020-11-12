@@ -1,10 +1,10 @@
 <?php
 // returns the string without acentuation and in upcase
-header('Content-Type: text/html; charset=utf-8');
+// header('Content-Type: text/html; charset=utf-8');
 function normaliza($string){
-			$acentos  =  'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýýþÿŔŕ';
-			$sem_acentos  =  'aaaaaaaceeeeiiiidnoooooouuuuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr';
-			$string = strtr($string, utf8_decode($acentos), $sem_acentos);
+			$special  =  'ÀÁÂÃÄÅÆÇÈÉÊËÌÍÎÏÐÑÒÓÔÕÖØÙÚÛÜÝÞßàáâãäåæçèéêëìíîïðñòóôõöøùúûýýþÿŔŕ';
+			$normal  =  'aaaaaaaceeeeiiiidnoooooouuuuybsaaaaaaaceeeeiiiidnoooooouuuyybyRr';
+			$string = strtr($string, utf8_decode($special), $normal);
 			$string = strtoupper($string);
 			return utf8_decode($string);
 		}
