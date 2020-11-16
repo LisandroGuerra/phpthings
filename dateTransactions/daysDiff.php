@@ -1,8 +1,8 @@
 <?php
-function dif_dias($data){
-    $hoje = strtotime(date("Y-m-d"));
-    $data = strtotime($data);
-    $dif_dias = (int)floor(($hoje - $data)/(60*60*24));
-    return $dif_dias;
+function days_diff($date){
+    $today = strtotime(date("Y-m-d"));
+    $date = strtotime($date);
+    $days_diff = (int)floor(($today - $date)/(60*60*24));
+    return $days_diff;
 }
 
