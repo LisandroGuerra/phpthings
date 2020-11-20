@@ -1,7 +1,7 @@
 <?php
 // returns document numbers without special characters and punctuation
-function clean($num){
-$num = preg_replace('/[./-#_]/', '', $num);
-   return $num;
+function clean($docNumber){
+$docNumber = preg_replace('/[./-#_]/', '', $docNumber);
+   return $docNumber;
 }
 ?>
